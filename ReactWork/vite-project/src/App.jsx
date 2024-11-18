@@ -5,7 +5,6 @@ import Student from './Component/Student';
 
 const App = () => {
 
-
   const mystyle={
        backgroundColor:'red',
        color:'cyan'
@@ -16,9 +15,7 @@ const App = () => {
   return (
      <div style={mystyle}>Abes engineering college
     <Student college='Abes engineering college' city='ghaziabd'/>
-    </div>
-     
-    
+    </div> 
   )
 }
 
