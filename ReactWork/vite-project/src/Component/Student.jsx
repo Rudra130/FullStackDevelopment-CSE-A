@@ -1,30 +1,32 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-
 import React from 'react'
-const Student = (props) => {
+import './student.css';
+export default function Student(props) {
   return (
-    <table>
-      <tbody>
-        <tr>
-         <th> Roll No:</th><th> Name </th><th> Age</th>
-        </tr>
-
-         <tr>
-          <td>136</td>
-          <td>James Bond</td>
-          <td>20</td>
-         </tr>
-         <tr>
-         
-          <td colSpan={2}>{props.college}</td>
-          <td colSpan={2}>{props.city}</td>
-         </tr>
-      </tbody>
-    </table>
-   
-
+    <div className='Icard'>
+        <table>
+            <tbody>
+               <tr>
+                    <td>
+                        {props.pic}
+                    </td>
+                </tr>
+               <tr>
+                    <td>Name</td><td>{props.name}</td>
+                </tr>
+                <tr style={{backgroundColor:'skyblue',color:'darkblue'}}>
+                    <td colSpan={2}>{props.college}</td>
+                </tr>
+                <tr>
+                    <td>Rollno</td> <td>{props.roll}</td>
+                </tr>
+                <tr>
+                    <td>Branch:</td><td>{props.branch}</td>
+                </tr>
+                <tr>
+                    <td>Name</td><td>{props.name}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
   )
 }
-
-export default Student
